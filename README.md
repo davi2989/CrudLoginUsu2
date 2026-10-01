@@ -1,30 +1,101 @@
-## Sistema de Login com Java e Banco de Dados XAMPP
-Este é um projeto de exemplo que demonstra como criar um sistema de login em Java utilizando o NetBeans IDE e integrando-o com um banco de dados MySQL usando o XAMPP.
+# Sistema de Login e Cadastro de Usuários
 
-## Descrição
-Este projeto visa criar um sistema de login completo em Java, utilizando o ambiente de desenvolvimento NetBeans e integrando-o com um banco de dados MySQL gerenciado pelo XAMPP. O sistema permite que os usuários se cadastrem com um nome de usuário e senha, que são armazenados de forma segura no banco de dados. Além disso, os usuários podem fazer login usando suas credenciais cadastradas para acessar o sistema.
+Projeto desenvolvido em **Java** utilizando **NetBeans**, com integração ao banco de dados **MySQL**.
 
-O sistema é construído com uma interface visual, aproveitando as bibliotecas gráficas fornecidas pelo NetBeans IDE para criar uma experiência de usuário intuitiva e agradável. Os formulários de cadastro e login são projetados de forma amigável, fornecendo feedback adequado para o usuário durante o processo.
+O sistema permite realizar o login de usuários e gerenciar os dados cadastrados através de operações de CRUD.
 
-A integração com o banco de dados XAMPP é essencial para o armazenamento seguro das informações dos usuários. O banco de dados é configurado para armazenar os dados de usuário, incluindo seus nomes de usuário e senhas.
+## Tecnologias utilizadas
 
-Este projeto serve como uma base sólida para o desenvolvimento de sistemas de login mais complexos e robustos em Java, e pode ser estendido com funcionalidades adicionais, como recuperação de senha, controle de acesso baseado em funções, entre outros.
+* Java
+* NetBeans
+* MySQL
+* XAMPP
+* JDBC
+* Git e GitHub
 
-## Recurso
-- Cadastro de usuários
-- Login de usuários
-- Validação de credenciais
-- Integração com banco de dados MySQL
-- Tecnologias Utilizadas
-- Java
-- NetBeans IDE
-- MySQL
-- XAMPP
+## Funcionalidades
 
+O sistema possui funcionalidades para:
 
-Sinta-se à vontade para personalizar este README de acordo com as especificidades do seu projeto e adicionar qualquer outra informação relevante.
+* Login de usuários
+* Cadastro de usuários
+* Consulta de usuários
+* Alteração de dados
+* Exclusão de usuários
+* Conexão com banco de dados MySQL
+* Interface gráfica desenvolvida em Java Swing
 
+## Banco de dados
 
+O projeto utiliza um banco de dados MySQL.
 
+O arquivo:
 
+```text
+bancojava.sql
+```
 
+contém a estrutura necessária para criar o banco e suas tabelas.
+
+### Como importar o banco
+
+1. Inicie o **Apache** e o **MySQL** pelo XAMPP.
+2. Acesse o **phpMyAdmin**.
+3. Crie ou selecione o banco de dados utilizado pelo projeto.
+4. Acesse a opção **Importar**.
+5. Selecione o arquivo `bancojava.sql`.
+6. Clique em **Importar**.
+
+## Como executar o projeto
+
+### 1. Clonar o repositório
+
+```bash
+git clone URL_DO_REPOSITORIO
+```
+
+### 2. Abrir no NetBeans
+
+Abra o projeto pelo NetBeans e aguarde o carregamento das dependências.
+
+### 3. Configurar o banco
+
+Verifique na classe de conexão se os dados do MySQL estão corretos:
+
+* Endereço do banco
+* Porta
+* Nome do banco
+* Usuário
+* Senha
+
+### 4. Iniciar o MySQL
+
+No XAMPP, deixe o **MySQL** iniciado.
+
+### 5. Executar
+
+Execute o projeto pelo NetBeans e utilize a tela de login para acessar o sistema.
+
+## Estrutura do projeto
+
+```text
+LoginUsuario2/
+├── src/
+│   └── classes e telas do sistema
+├── nbproject/
+├── build.xml
+├── bancojava.sql
+└── README.md
+```
+
+## Objetivo
+
+O objetivo do projeto é desenvolver um sistema simples de gerenciamento de usuários, colocando em prática conhecimentos de **Java, programação orientada a objetos, interfaces gráficas, banco de dados, JDBC e operações CRUD**.
+
+## Autores
+
+Projeto desenvolvido para fins acadêmicos.
+
+**Curso Técnico em Informática**
+
+**Colégio ULBRA São Lucas**
